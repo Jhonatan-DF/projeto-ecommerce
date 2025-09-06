@@ -4,47 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/globals.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+
     <title>E-commerce Master</title>
 </head>
 
 <body>
-    <header>
+    <header class="cabecalho">
+
         <h1>E-commerce Master</h1>
+        
+        <div class="header-conteudo">
 
-        <a href="">
-            <img src="./assets/images/logo.svg" alt="Imagem do logo">
-        </a>
+            <div class="header-esquerda">
 
-        <nav >
-            <ul class="menu">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
+                <button class="menu-hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-                <li>
-                    <a href="#sobre">Sobre</a>
-                </li>
+                <a href="">
+                    <img src="./assets/images/logo.svg" alt="Imagem do logo">
+                </a>
 
-                <li>
-                    <a href="#produtos">Produtos</a>
-                </li>
+            </div>
 
-                <li>
-                    <a href="#perguntas">Perguntas</a>
-                </li>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
 
-                <li>
-                    <a href="#contato">Fale conosco</a>
-                </li>
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
 
-            </ul>
-        </nav>
+                    <li>
+                        <a href="#produtos">Produtos</a>
+                    </li>
 
-        <button>
-            <img src="./assets/images/icone_carrinho.svg" alt="">
-        </button>
+                    <li>
+                        <a href="#perguntas">Perguntas</a>
+                    </li>
+
+                    <li>
+                        <a href="#contato">Fale conosco</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <button>
+                <img src="./assets/images/icone_carrinho.svg" alt="">
+            </button>
+        </div>
 
     </header>
 
@@ -119,7 +139,7 @@
         </div>
     </footer>
     <!-- [1] -->
-    <div  id="modal-1" class="modal" aria-hidden="true">
+    <div id="modal-1" class="modal" aria-hidden="true">
 
         <!-- [2] -->
         <div tabindex="-1" data-micromodal-close>

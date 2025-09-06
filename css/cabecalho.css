@@ -1,0 +1,41 @@
+.cabecalho{
+    grid-area: header;
+    padding: 30px 0;
+}
+
+.header-conteudo{
+    background-color: thistle;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.header-esquerda{
+background-color: lightgreen;
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.menu-hamburguer{
+    width: 24PX;
+    height: 24PX;
+    background: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+    
+}
+
+.menu-hamburguer span{
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #ffffff;
+    
+}
