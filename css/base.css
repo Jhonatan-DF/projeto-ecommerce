@@ -2,7 +2,9 @@
   --cor-neutra-escura: #111111;
   --cor-neutra-clara: #ffffff;
   --cor-primaria-hover: #834de8;
-  --cor-primaria: #654D7D
+  --cor-primaria: #654D7D;
+  --cor-cinza-escura: #29272a;
+  --cor-cinza-clara: #ededed;
 }
 
 body {

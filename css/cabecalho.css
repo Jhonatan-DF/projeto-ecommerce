@@ -12,8 +12,8 @@
 }
 
 .cabecalho .menu-principal {
-  /* display: none; */
-  display: block;
+  display: none;
+  /* display: block; */
   background-color: var(--cor-neutra-escura);
   position: absolute;
   top: 5rem;
