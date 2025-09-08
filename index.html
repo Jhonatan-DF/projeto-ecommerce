@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/globals.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/cabecalho.css">
 
     <title>E-commerce Master</title>
@@ -18,7 +18,7 @@
 <body>
     <header class="cabecalho">
 
-        <h1>E-commerce Master</h1>
+        <!-- <h1>E-commerce Master</h1> -->
         
         <div class="header-conteudo">
 
@@ -30,13 +30,13 @@
                     <span></span>
                 </button>
 
-                <a href="">
+                <a class="logo" href="">
                     <img src="./assets/images/logo.svg" alt="Imagem do logo">
                 </a>
 
             </div>
 
-            <nav>
+            <nav class="menu-principal">
                 <ul class="menu">
                     <li>
                         <a href="#home">Home</a>
@@ -61,8 +61,9 @@
                 </ul>
             </nav>
 
-            <button>
+            <button class="botao-carrinho" data-micromodal-trigger="modal-1">
                 <img src="./assets/images/icone_carrinho.svg" alt="">
+                <span id="contador-carrinho">0</span>
             </button>
         </div>
 
