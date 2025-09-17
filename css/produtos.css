@@ -87,16 +87,14 @@ main .informacoes .adicionar-ao-carrinho:hover{
 }
 
 @media (min-width: 768px) {
-    main{
-        background-color: darkgreen;
-    }
+    
 
     main .produtos .produto{
         max-width: 369px;
     }
 
     main .produtos ul{
-        background-color: cadetblue;
+       
         flex-direction: row;
         flex-wrap: wrap;
         gap: 2rem;
