@@ -28,6 +28,11 @@
   align-items: center;
 }
 
+.modal header h2 {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
 .modal header .fechar {
   background-image: url("../assets/images/icone_fechar.svg");
   width: 24px;
@@ -161,7 +166,7 @@ td .btn-remover {
     align-items: center;
     justify-content: center;
     /* background-color: var(--cor-neutra-escura); */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
   }
 
   .modal .container td {
