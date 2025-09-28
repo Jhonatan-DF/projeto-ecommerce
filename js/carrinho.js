@@ -31,7 +31,6 @@ console.log(botoesAdicionarAoCarrinho);
 // - atualizar o DOM e o total
 botoesAdicionarAoCarrinho.forEach((botao) => {
   botao.addEventListener("click", (evento) => {
-    
     // Objetivo 3 - atualizar valores do carrinho:
     // - ouvir mudanças de quantidade
     // - recalcular total individual
@@ -69,14 +68,27 @@ botoesAdicionarAoCarrinho.forEach((botao) => {
       carrinho.push(produto);
     }
     salvarProdutosNoCarrinho(carrinho);
+    atualizarContadorCarrinho();
   });
 });
 
 function salvarProdutosNoCarrinho(carrinho) {
-   localStorage.setItem("carrinho", JSON.stringify(carrinho));
+  localStorage.setItem("carrinho", JSON.stringify(carrinho));
 }
 
 function obterProdutosDoCarringo() {
   const produtos = localStorage.getItem("carrinho");
   return produtos ? JSON.parse(produtos) : [];
 }
+
+//passo 4 atualizar o contador do carrinho de compras
+function atualizarContadorCarrinho() {
+  const carrinho = obterProdutosDoCarringo();
+  let total = 0;
+
+  carrinho.forEach((produto) => {
+    total += produto.quantidade;
+  });
+  document.getElementById("contador-carrinho").textContent = total;
+}
+atualizarContadorCarrinho();
