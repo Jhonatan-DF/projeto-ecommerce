@@ -69,7 +69,7 @@ botoesAdicionarAoCarrinho.forEach((botao) => {
     }
     salvarProdutosNoCarrinho(carrinho);
     atualizarContadorCarrinho();
-    renderizarTabelaCarrinho();
+    renderizarTabelaDoCarrinho();
   });
 });
 
@@ -95,7 +95,7 @@ function atualizarContadorCarrinho() {
 atualizarContadorCarrinho();
 
 //passo 5 - renderizar os produtos do carrinho de compras
-function renderizarTabelaCarrinho() {
+function renderizarTabelaDoCarrinho() {
   const produtos = obterProdutosDoCarrinho();
   const corpoTabela = document.querySelector("#modal-1-content table tbody");
   corpoTabela.innerHTML = ""; //limpar tabela antes de renderizar
@@ -123,4 +123,33 @@ function renderizarTabelaCarrinho() {
   });
 }
 
-renderizarTabelaCarrinho();
+renderizarTabelaDoCarrinho();
+
+//oBJETIVO 2 - remover produtos do carrinho
+// passo 1 - pegar o botão de deletar do HTML
+
+const corpoTabela = document.querySelector("#modal-1-content table tbody");
+corpoTabela.addEventListener("click", (evento) => {
+
+
+
+
+  if (evento.target.classList.contains("btn-remover")) {
+    const id = evento.target.dataset.id;
+    removerProdutoDoCarrinho(id);
+  }
+});
+
+function removerProdutoDoCarrinho(id){
+  const produtos = obterProdutosDoCarrinho();
+ 
+
+  //filtra os produtos que não tem o id passado por paremetro
+  const carrinhoAtualizado = produtos.filter(produto => produto.id !==id);
+ 
+  salvarProdutosNoCarrinho(carrinhoAtualizado)
+  atualizarContadorCarrinho();
+  renderizarTabelaDoCarrinho();
+}
+
+
