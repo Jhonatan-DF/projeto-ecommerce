@@ -168,6 +168,7 @@ function removerProdutoDoCarrinho(id) {
   salvarProdutosNoCarrinho(carrinhoAtualizado);
   atualizarContadorCarrinho();
   renderizarTabelaDoCarrinho();
+  atualizarValorTotalCarrinho();
 
 }
 
