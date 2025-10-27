@@ -29,7 +29,7 @@ console.log(botoesAdicionarAoCarrinho);
 // - ouvir o botão de deletar
 // - remover do localStorage
 // - atualizar o DOM e o total
-botoesAdicionarAoCarrinho.forEach((botao) => {
+botoesAdicionarAoCarrinho.forEach(botao => {
   botao.addEventListener("click", (evento) => {
     // Objetivo 3 - atualizar valores do carrinho:
     // - ouvir mudanças de quantidade
